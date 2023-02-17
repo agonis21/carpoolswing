@@ -120,7 +120,7 @@ public class DonerRegistrationForm extends JDialog {
             System.out.println("Succesful registration of: "+donerUser.Fname+donerUser.Lname);
         }
         else{
-            System.out.println("Registration canceled");
+            System.out.println("Registration cancelled");
         }
 
     }
