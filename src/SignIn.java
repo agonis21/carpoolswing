@@ -13,6 +13,7 @@ public class SignIn implements ActionListener {
     JTextField userID = new JTextField();
     JPasswordField userPass = new JPasswordField();
     JLabel userIDLabel = new JLabel("user ID:");
+    JLabel warning = new JLabel();
     JLabel userPassLabel = new JLabel("password:");
     JLabel createAcc = new JLabel("Not registered? Click here!");
     JButton registerBut = new JButton("Register");
@@ -35,6 +36,8 @@ public class SignIn implements ActionListener {
         createAcc.setBounds(50,175,75,25);
         message.setBounds(50,50,250,45);
         message.setFont(new Font( null , Font.BOLD, 20));
+        warning.setBounds(145,160,250,45);
+        warning.setFont(new Font( null , Font.BOLD, 14));
         frame.add(userIDLabel);
         frame.add(userPassLabel);
         frame.add(message);
@@ -45,6 +48,7 @@ public class SignIn implements ActionListener {
         frame.add(registerBut);
         frame.add(createAcc);
         frame.add(forgotPassBut);
+        frame.add(warning);
 
         createAcc.setBounds(15,250,250,45);
         createAcc.setFont(new Font( null , Font.BOLD, 14));
@@ -90,13 +94,13 @@ public class SignIn implements ActionListener {
                    HomePage welcome = new HomePage(username);
                }
                else{
-                   message.setForeground(Color.red);
-                   message.setText("Incorrect Password");
+                   warning.setForeground(Color.red);
+                   warning.setText("Incorrect Password");
                }
            }
            else{
-               message.setForeground(Color.red);
-               message.setText("Username not found");
+               warning.setForeground(Color.red);
+               warning.setText("Username not found");
            }
 
 
