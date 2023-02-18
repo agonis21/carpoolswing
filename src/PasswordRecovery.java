@@ -54,8 +54,12 @@ public class PasswordRecovery implements ActionListener {
             String email = userEmail.getText();
             HashMap<String,String> accountInfo = new HashMap<String, String>();
             if(accountInfo.containsKey(email)){
+                new NewPassSetup(accountInfo);
                 NewPassSetup newPass = new NewPassSetup(accountInfo);
+                frame.dispose();
+
             } //should be checking the email to then open new pass setup but isnt
+            //do a security question
         }
         }
     }

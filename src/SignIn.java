@@ -67,7 +67,7 @@ public class SignIn implements ActionListener {
         forgotPassBut.setFocusable(false);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400,400);
+        frame.setSize(500,500);
         frame.setLayout(null);
         frame.setVisible(true);
 
@@ -110,9 +110,13 @@ public class SignIn implements ActionListener {
 
         if(e.getSource()==registerBut){
             Register registration = new Register();
+            frame.dispose();
+
         }
         if(e.getSource()==forgotPassBut){
             PasswordRecovery passRecov = new PasswordRecovery(accountInfo);
+            frame.dispose();
+
         }
 
 
