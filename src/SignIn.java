@@ -5,11 +5,11 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 
 public class SignIn implements ActionListener {
-//have donor and renter option
+    //have donor and renter option
     JFrame frame = new JFrame();
     JButton loginBut = new JButton("Login");
     JButton resetBut = new JButton("Reset");
-    JButton forgotPassBut  = new JButton("Forgot Password");
+    JButton forgotPassBut = new JButton("Forgot Password");
     JTextField userID = new JTextField();
     JPasswordField userPass = new JPasswordField();
     JLabel userIDLabel = new JLabel("user ID:");
@@ -20,24 +20,23 @@ public class SignIn implements ActionListener {
     JLabel message = new JLabel("Welcome to Carpool!");
 
 
+    HashMap<String, String> loginInfo = new HashMap<String, String>();
+    HashMap<String, String> accountInfo = new HashMap<String, String>();
 
-    HashMap<String,String> loginInfo = new HashMap<String,String>();
-    HashMap<String,String> accountInfo = new HashMap<String, String>();
-
-    SignIn(HashMap<String,String> loginInfo1){
+    SignIn(HashMap<String, String> loginInfo1) {
 
         loginInfo = loginInfo1;
-        HashMap<String,String> accountInfo1 = new HashMap<String, String>();
+        HashMap<String, String> accountInfo1 = new HashMap<String, String>();
 
-        accountInfo=accountInfo1;
+        accountInfo = accountInfo1;
 
-        userIDLabel.setBounds(50,100,75,25);
-        userPassLabel.setBounds(50,125,75,25);
-        createAcc.setBounds(50,175,75,25);
-        message.setBounds(50,50,250,45);
-        message.setFont(new Font( null , Font.BOLD, 20));
-        warning.setBounds(145,160,250,45);
-        warning.setFont(new Font( null , Font.BOLD, 14));
+        userIDLabel.setBounds(50, 100, 75, 25);
+        userPassLabel.setBounds(50, 125, 75, 25);
+        createAcc.setBounds(50, 175, 75, 25);
+        message.setBounds(50, 50, 250, 45);
+        message.setFont(new Font(null, Font.BOLD, 20));
+        warning.setBounds(145, 160, 250, 45);
+        warning.setFont(new Font(null, Font.BOLD, 14));
         frame.add(userIDLabel);
         frame.add(userPassLabel);
         frame.add(message);
@@ -50,80 +49,78 @@ public class SignIn implements ActionListener {
         frame.add(forgotPassBut);
         frame.add(warning);
 
-        createAcc.setBounds(15,250,250,45);
-        createAcc.setFont(new Font( null , Font.BOLD, 14));
+        createAcc.setBounds(15, 250, 250, 45);
+        createAcc.setFont(new Font(null, Font.BOLD, 14));
 
-        userID.setBounds(125,100,200,25);
-        userPass.setBounds(125,125,200,25);
-        loginBut.setBounds(125,200,100,25);
+        userID.setBounds(125, 100, 200, 25);
+        userPass.setBounds(125, 125, 200, 25);
+        loginBut.setBounds(125, 200, 100, 25);
 
         loginBut.addActionListener(this);
         loginBut.setFocusable(false);
-        resetBut.setBounds(225,200,100,25);
+        resetBut.setBounds(225, 200, 100, 25);
         resetBut.addActionListener(this);
         resetBut.setFocusable(false);
 
-        registerBut.setBounds(225,250,100,25);
+        registerBut.setBounds(225, 250, 100, 25);
         registerBut.addActionListener(this);
         registerBut.setFocusable(false);
-        forgotPassBut.setBounds(125,150,200,25);
+        forgotPassBut.setBounds(125, 150, 200, 25);
         forgotPassBut.addActionListener(this);
         forgotPassBut.setFocusable(false);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500,500);
+        frame.setSize(500, 500);
         frame.setLayout(null);
         frame.setVisible(true);
 
     }
+
     private JPanel signIn;
     private JButton logInButton;
     private JPasswordField passwordField1;
 
     @Override
-    public void actionPerformed(ActionEvent e){
+    public void actionPerformed(ActionEvent e) {
 
-        if(e.getSource()==loginBut){
-           String username = userID.getText();
-           String password = String.valueOf(userPass.getPassword());
-           if(loginInfo.containsKey(username)){
-               if(loginInfo.get(username).equals(password)){
-                   message.setForeground(Color.blue);
-                   message.setText("Login Successful!");
-                   frame.dispose();
-                   HomePage welcome = new HomePage(username);
-               }
-               else{
-                   warning.setForeground(Color.red);
-                   warning.setText("Incorrect Password");
-               }
-           }
-           else{
-               warning.setForeground(Color.red);
-               warning.setText("Username not found");
-           }
-
+        if (e.getSource() == loginBut) {
+            String username = userID.getText();
+            String password = String.valueOf(userPass.getPassword());
+            if (loginInfo.containsKey(username)) {
+                if (loginInfo.get(username).equals(password)) {
+                    message.setForeground(Color.blue);
+                    message.setText("Login Successful!");
+                    frame.dispose();
+                    HomePage welcome = new HomePage(username);
+                } else {
+                    warning.setForeground(Color.red);
+                    warning.setText("Incorrect Password");
+                }
+            } else {
+                warning.setForeground(Color.red);
+                warning.setText("Username not found");
+            }
 
 
         }
 
-        if(e.getSource()==resetBut){
+        if (e.getSource() == resetBut) {
             userID.setText("");
             userPass.setText("");
         }
 
-        if(e.getSource()==registerBut){
+        if (e.getSource() == registerBut) {
             Register registration = new Register();
             frame.dispose();
 
         }
-        if(e.getSource()==forgotPassBut){
+        if (e.getSource() == forgotPassBut) {
             PasswordRecovery passRecov = new PasswordRecovery(accountInfo);
             frame.dispose();
 
         }
 
 
-
     }
+
 }
