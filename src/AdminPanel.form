@@ -8,7 +8,6 @@
     <properties>
       <background color="-16113088"/>
       <maximumSize width="800" height="800"/>
-      <preferredSize width="640" height="480"/>
     </properties>
     <border type="none"/>
     <children>
