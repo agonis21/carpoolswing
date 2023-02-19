@@ -7,6 +7,7 @@
     </constraints>
     <properties>
       <background color="-16047550"/>
+      <preferredSize width="640" height="480"/>
     </properties>
     <border type="none"/>
     <children>
@@ -100,7 +101,7 @@
             <properties>
               <font name="Courier New" size="36" style="1"/>
               <foreground color="-5720122"/>
-              <text value="doner sign up "/>
+              <text value="donor/renter sign up "/>
             </properties>
           </component>
           <component id="b651" class="javax.swing.JLabel">
@@ -169,7 +170,7 @@
               <defaultCapable value="false"/>
               <font name="Courier New" size="20" style="1"/>
               <foreground color="-5720122"/>
-              <text value="Sing Up "/>
+              <text value="Sign Up "/>
             </properties>
           </component>
         </children>
