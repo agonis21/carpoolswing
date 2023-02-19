@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Disconnect {
+public class JobDetails {
     private JPanel BackgroundPanel;
     private JToolBar Navbar;
     private JButton HomeButton;
