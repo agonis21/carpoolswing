@@ -2,12 +2,10 @@ import entity.User;
 
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AdminPanel extends JFrame {
-    JFrame frame = new JFrame();
     private JLabel adminID_label;
     private JLabel adminName_label;
     private JLabel currentDate_label;
@@ -30,38 +28,21 @@ public class AdminPanel extends JFrame {
     private JPanel carpoolLogo_panel;
     private JPanel footer_panel;
 
+    public static void main(String[] args){
 
 
 
 
-    AdminPanel(){
 
 
-        frame.setContentPane(main_panel);
-        frame.setTitle("Carpool Administrator View");
-        frame.setSize(800,800);
-        frame.pack();
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-
+        AdminPanel adminPanel = new AdminPanel();
+        adminPanel.setContentPane(adminPanel.main_panel);
+        adminPanel.setTitle("Carpool Administrator View");
+        adminPanel.setSize(800,800);
+        adminPanel.setVisible(true);
+        adminPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-//    public static void main(String[] args){
-//
-//
-//
-//
-//
-//
-//
-//        AdminPanel adminPanel = new AdminPanel();
-//        adminPanel.setContentPane(adminPanel.main_panel);
-//        adminPanel.setTitle("Carpool Administrator View");
-//        adminPanel.setSize(800,800);
-//        adminPanel.pack();
-//        adminPanel.setVisible(true);
-//        adminPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//    }
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
