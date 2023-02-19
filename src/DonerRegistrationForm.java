@@ -26,7 +26,7 @@ public class DonerRegistrationForm extends JDialog {
         super(parent);
         setTitle("Create Doner Account");
         setContentPane(DonerSignUpPanel);
-        setMinimumSize(new Dimension(450, 600));
+        setMinimumSize(new Dimension(760, 570));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
