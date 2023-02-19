@@ -8,7 +8,7 @@ public class Disconnect {
     private JButton HomeButton;
     private JButton AccountButton;
     private JButton DisconnectButton;
-    private JLabel ThankyouLabel;
+    private JLabel ThankYouLabel;
     private JLabel DisconnectConfirmationLabel;
 
     public Disconnect() {

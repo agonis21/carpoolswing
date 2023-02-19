@@ -31,7 +31,7 @@ public class JobDetails {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (JobType.getSelectedItem().equals("Select Job Type")) {
-                    SubmissionLabel.setText(" Select File Type");
+                    SubmissionLabel.setText(" Select Job Type");
 
                 } else {
                     SubmissionLabel.setText("Submission Complete");
