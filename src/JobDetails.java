@@ -1,7 +1,8 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class JobDetails {
+public class JobDetails extends JFrame {
+    JFrame frame = new JFrame("JobDetails");
     private JPanel BackgroundPanel;
     private JToolBar Navbar;
     private JButton HomeButton;
@@ -19,6 +20,11 @@ public class JobDetails {
     private JTextField JobDurationText;
 
     public JobDetails() {
+        frame.setContentPane(BackgroundPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+
         UploadButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -44,12 +50,20 @@ public class JobDetails {
         });
     }
 
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("JobDetails");
-        frame.setContentPane(new JobDetails().BackgroundPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-    }
+//    public static void main(String[] args) {
+//        JobDetails jobDet = new JobDetails();
+//
+//    }
+
+//    JobDetails(){
+//        JFrame frame = new JFrame("JobDetails");
+//        frame.setContentPane(new JobDetails().BackgroundPanel);
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.pack();
+//        frame.setVisible(true);
+//
+//
+//    }
+
 
 }

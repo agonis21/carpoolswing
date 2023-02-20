@@ -25,6 +25,7 @@ public class HomeRenter implements ActionListener {
         frame.setContentPane(BackgroundPanel);
         frame.pack();
 
+        RentButton.addActionListener(this);
         TutorialButton.addActionListener(this);
         AboutButton.addActionListener(this);
 
@@ -48,10 +49,22 @@ public class HomeRenter implements ActionListener {
             tutorialFrame.frame.setVisible(true);
             frame.dispose();
         }
+
         if(e.getSource()== AboutButton)
         {
             AboutPageRenter aboutFrame = new AboutPageRenter();
             aboutFrame.frame.setVisible(true);
+            frame.dispose();
+        }
+
+        if(e.getSource()== RentButton)
+        {
+            System.out.println("ffff");
+            JobDetails jobFrame = new JobDetails();
+            jobFrame.frame.setVisible(true);
+
+            //AboutPageRenter aboutFrame = new AboutPageRenter();
+
             frame.dispose();
         }
 
