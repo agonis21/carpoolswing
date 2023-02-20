@@ -13,6 +13,10 @@ public class JobDetails {
     private JPanel HeaderPanel;
     private JLabel SubmissionLabel;
     private JLabel UploadFileConfirmation;
+    private JLabel JobDurationLabel;
+    private JTextField JobDeadlineText;
+    private JLabel JobDeadlineLabel;
+    private JTextField JobDurationText;
 
     public JobDetails() {
         UploadButton.addActionListener(new ActionListener() {
