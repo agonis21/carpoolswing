@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="JobDetails">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="26" y="20" width="754" height="476"/>
+    </constraints>
+    <properties>
+      <preferredSize width="640" height="480"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="3649c" binding="BackgroundPanel" layout-manager="GridLayoutManager" row-count="9" column-count="15" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16047550"/>
+          <preferredSize width="640" height="480"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="ed4f0" binding="HeaderPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="15" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-15854049"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <toolbar id="13857" binding="Navbar">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-10518631"/>
+                  <floatable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e27c4" class="javax.swing.JButton" binding="HomeButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusable value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Home"/>
+                    </properties>
+                  </component>
+                  <hspacer id="998eb">
+                    <constraints/>
+                  </hspacer>
+                  <component id="93815" class="javax.swing.JButton" binding="AccountButton">
+                    <constraints/>
+                    <properties>
+                      <background color="-10518631"/>
+                      <borderPainted value="false"/>
+                      <focusPainted value="false"/>
+                      <font name="Trebuchet MS" size="18"/>
+                      <foreground color="-920846"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="11"/>
+                      <iconTextGap value="8"/>
+                      <preferredSize width="100" height="40"/>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Account"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+              <component id="35e43" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="CPtextLogo-01 (1).png"/>
+                  <labelFor value="7d0b5"/>
+                  <text value=" "/>
+                </properties>
+              </component>
+              <vspacer id="430d">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <vspacer id="723f7">
+            <constraints>
+              <grid row="6" column="13" row-span="3" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="d6c5a">
+            <constraints>
+              <grid row="6" column="0" row-span="3" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="7d0b5" class="javax.swing.JComboBox" binding="JobType">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="8" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <actionCommand value="SelectJobType"/>
+              <model>
+                <item value="Select Job Type"/>
+                <item value="PDF"/>
+                <item value="DOCX"/>
+                <item value="TXT"/>
+                <item value="XLSX"/>
+                <item value="PPTX"/>
+                <item value="JPG"/>
+                <item value="PNG"/>
+                <item value="HTML"/>
+              </model>
+              <popupVisible value="false"/>
+            </properties>
+          </component>
+          <component id="c6430" class="javax.swing.JLabel" binding="SelectJobTypeLabel">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5720122"/>
+              <enabled value="true"/>
+              <font name="Microsoft YaHei UI Light" size="26" style="0"/>
+              <foreground color="-5720122"/>
+              <horizontalAlignment value="11"/>
+              <text value="       Welcome to Job Details!"/>
+            </properties>
+          </component>
+          <component id="169f2" class="javax.swing.JLabel" binding="JobDurationLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5720122"/>
+              <font name="Microsoft YaHei UI Light" size="16"/>
+              <foreground color="-5720122"/>
+              <text value="Job Duration:"/>
+            </properties>
+          </component>
+          <component id="1a6a8" class="javax.swing.JTextField" binding="JobDeadlineText">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="20add" class="javax.swing.JLabel" binding="JobDeadlineLabel">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5720122"/>
+              <font name="Microsoft YaHei UI Light" size="16"/>
+              <foreground color="-5720122"/>
+              <text value="Job Deadline:"/>
+            </properties>
+          </component>
+          <component id="440c" class="javax.swing.JTextField" binding="JobDurationText">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="93973" class="javax.swing.JButton" binding="SubmitButton">
+            <constraints>
+              <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <actionCommand value="Submit"/>
+              <background color="-14051391"/>
+              <borderPainted value="false"/>
+              <font name="Trebuchet MS" size="24"/>
+              <foreground color="-920846"/>
+              <label value="Submit Job"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Submit Job"/>
+            </properties>
+          </component>
+          <component id="ff796" class="javax.swing.JButton" binding="UploadButton">
+            <constraints>
+              <grid row="4" column="9" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="160" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <actionCommand value="Upload File"/>
+              <background color="-14051391"/>
+              <borderPainted value="false"/>
+              <font name="Trebuchet MS" size="24"/>
+              <foreground color="-920846"/>
+              <label value="Upload File"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Upload File"/>
+            </properties>
+          </component>
+          <component id="6e654" class="javax.swing.JLabel" binding="SubmissionLabel">
+            <constraints>
+              <grid row="7" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5717562"/>
+              <font name="Microsoft YaHei UI Light" size="12"/>
+              <foreground color="-5720122"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="66e42" class="javax.swing.JLabel" binding="UploadFileConfirmation">
+            <constraints>
+              <grid row="5" column="9" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5720122"/>
+              <font name="Microsoft YaHei UI Light" size="12"/>
+              <foreground color="-5720122"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
