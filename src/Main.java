@@ -9,6 +9,7 @@ public class Main {
 
      // SignIn passwordRecovery = new SignIn(passRecover.getAccountInfo());
 //changes not made
+        //making some changes for registration
     }
 
 }
