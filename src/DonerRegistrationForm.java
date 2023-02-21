@@ -26,7 +26,7 @@ public class DonerRegistrationForm extends JDialog {
         super(parent);
         setTitle("Create Doner Account");
         setContentPane(DonerSignUpPanel);
-        setMinimumSize(new Dimension(760, 570));
+        setMinimumSize(new Dimension(450, 600));
         setModal(true);
         setLocationRelativeTo(parent);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -89,9 +89,9 @@ public class DonerRegistrationForm extends JDialog {
 
     private DonerUser addDonerToDB(String Fname, String Lname, String email, String password) throws SQLException {
         DonerUser DonerUser = null;
-        final String DB_URL = "jdbc:mysql://127.0.0.1:3306/car_requirments";
+        final String DB_URL = "jdbc:mysql://localhost:3306/software";
         final String USERNAME = "root";
-        final String PASSWORD = "Movebitch1";
+        final String PASSWORD = "123";
         try {
             Connection conn = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
             Statement stmt = conn.createStatement();
