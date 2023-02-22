@@ -49,6 +49,19 @@ public class JobDetails extends JFrame {
             }
         });
 
+
+        HomeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == HomeButton)
+                {
+                    HomeRenter Home = new HomeRenter();
+                    Home.frame.setVisible(true);
+                    frame.dispose();
+                }
+            }
+        });
+
     }
 
 //    public static void main(String[] args) {
