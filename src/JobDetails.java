@@ -48,6 +48,7 @@ public class JobDetails extends JFrame {
                 }
             }
         });
+
     }
 
 //    public static void main(String[] args) {
