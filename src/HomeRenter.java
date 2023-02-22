@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.Locale;
 
 public class HomeRenter implements ActionListener {
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("Home");
     private JButton RentButton;
     private JPanel BackgroundPanel;
     private JPanel Header;

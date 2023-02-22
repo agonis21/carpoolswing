@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.util.Locale;
 
 public class HomeDonor implements ActionListener {
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("Home");
 
     private JPanel Header;
     private JToolBar Navbar;
@@ -29,6 +29,7 @@ public class HomeDonor implements ActionListener {
 
         TutorialButton.addActionListener(this);
         AboutButton.addActionListener(this);
+        DonateButton.addActionListener(this);
 
         //Connect Asm and other's pages using these buttons
         //DonateButton.addActionListener(this);
@@ -55,6 +56,23 @@ public class HomeDonor implements ActionListener {
             AboutPageDonor aboutFrame = new AboutPageDonor();
             aboutFrame.frame.setVisible(true);
             frame.dispose();
+        }
+        if(e.getSource() == DonateButton)
+        {
+            /*
+            ##### DATABASE IMPLEMENTATION ######
+
+            if User id in Donor table go straight to how long page
+
+            else go straight to how long page.
+
+             */
+
+            //temp navigation:
+            HowLong howlong = new HowLong();
+//            howlong.frame.setVisible(true);
+            frame.dispose();
+
         }
 
 
